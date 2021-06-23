@@ -11,7 +11,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 :root {
-  --bs-blue: #0d6efd;
+  --bs-blue: #1c375e;
   --bs-indigo: #6610f2;
   --bs-purple: #6f42c1;
   --bs-pink: #d63384;
@@ -207,11 +207,11 @@ sup {
 }
 
 a {
-  color: #0d6efd;
+  color: #0a53be;
   text-decoration: underline;
 }
 a:hover {
-  color: #0a58ca;
+  color: #d60745;
 }
 
 a:not([href]):not([class]), a:not([href]):not([class]):hover {
@@ -7333,7 +7333,7 @@ textarea.form-control-lg {
 
 /* rtl:end:remove */
 .text-primary {
-  color: #0d6efd !important;
+  color: #0a53be !important;
 }
 
 .text-secondary {
@@ -7352,6 +7352,9 @@ textarea.form-control-lg {
   color: #ffc107 !important;
 }
 
+.text-gold {
+  color: #ffbf00 !important;
+}
 .text-danger {
   color: #dc3545 !important;
 }
@@ -10852,8 +10855,8 @@ header.masthead {
   background-color: #343a40;
   background: url("../assets/img/bg-masthead.jpg") no-repeat center center;
   background-size: cover;
-  padding-top: 8rem;
-  padding-bottom: 8rem;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
 }
 header.masthead:before {
   content: "";
@@ -10863,15 +10866,15 @@ header.masthead:before {
   width: 100%;
   top: 0;
   left: 0;
-  opacity: 0.5;
+  opacity: 0.8;
 }
 header.masthead h1, header.masthead .h1 {
   font-size: 2rem;
 }
 @media (min-width: 768px) {
   header.masthead {
-    padding-top: 12rem;
-    padding-bottom: 12rem;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
   }
   header.masthead h1, header.masthead .h1 {
     font-size: 3rem;
@@ -10900,7 +10903,7 @@ header.masthead h1, header.masthead .h1 {
 }
 .testimonials .testimonial-item img {
   max-width: 12rem;
-  box-shadow: 0px 5px 5px 0px #adb5bd;
+  /*box-shadow: 0px 5px 5px 0px #adb5bd;*/
 }
 
 .call-to-action {
@@ -10919,7 +10922,7 @@ header.masthead h1, header.masthead .h1 {
   width: 100%;
   top: 0;
   left: 0;
-  opacity: 0.5;
+  opacity: 0.8;
 }
 
 footer.footer {
