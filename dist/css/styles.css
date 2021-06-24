@@ -458,6 +458,7 @@ progress {
 .lead {
   font-size: 1.25rem;
   font-weight: 300;
+  text-align: justify;
 }
 
 .display-1 {
@@ -10877,7 +10878,7 @@ header.masthead h1, header.masthead .h1 {
     padding-bottom: 6rem;
   }
   header.masthead h1, header.masthead .h1 {
-    font-size: 3rem;
+    font-size: 4rem;
   }
 }
 
