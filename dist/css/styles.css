@@ -10854,7 +10854,7 @@ textarea.form-control-lg {
 header.masthead {
   position: relative;
   background-color: #0d4c77;
-  background: url("../assets/img/bg-masthead.jpg") no-repeat center center;
+  background: url("../assets/img/background.jpg") no-repeat center center;
   background-size: cover;
   padding-top: 6rem;
   padding-bottom: 6rem;
@@ -10928,7 +10928,7 @@ header.masthead h1, header.masthead .h1 {
 .call-to-action {
   position: relative;
   background-color: #0d4c77;
-  background: url("../assets/img/bg-masthead.jpg") no-repeat center center;
+  background: url("../assets/img/background.jpg") no-repeat center center;
   background-size: cover;
   padding-top: 7rem;
   padding-bottom: 7rem;
@@ -10947,4 +10947,12 @@ header.masthead h1, header.masthead .h1 {
 footer.footer {
   padding-top: 4rem;
   padding-bottom: 4rem;
+}
+
+.carte_etape {
+  background: url('../assets/img/carte_des_etapes.png') no-repeat center center;
+}
+
+.famille {
+  background: url('../assets/img/famille.png') no-repeat center center;  
 }
