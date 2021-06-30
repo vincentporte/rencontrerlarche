@@ -380,27 +380,93 @@
             </div>
         </section>
 
-        <!-- PODCAST -->
         <section class="features-icons bg-light text-center">
             <div class="container position-relative">
                 <div class="row justify-content-center">
                     <div class="col-xl-10">
+
                         <h2 class="mb-5">
-                            Podcasts
+                            Sur les réseaux
                         </h2>
-                    </div>
-                </div>
-                <div class="row justify-content-center">
-                    <div class="col-xl-2">
-                        25 juin 2021
-                    </div>
-                    <div class="col-xl-8">
-                        <iframe src="https://rcf.fr/embed/2674417" frameborder="0" width="100%" ></iframe>
+
+                        <ul class="nav nav-tabs mb-5" id="myTab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="podcast-tab" data-bs-toggle="tab" data-bs-target="#podcast" type="button" role="tab" aria-controls="podcast" aria-selected="true">
+                                    Podcasts
+                                </button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="newsletter-tab" data-bs-toggle="tab" data-bs-target="#newsletter" type="button" role="tab" aria-controls="newsletter" aria-selected="false">
+                                    Newsletters
+                                </button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="post-tab" data-bs-toggle="tab" data-bs-target="#post" type="button" role="tab" aria-controls="post" aria-selected="false">
+                                    Secret Posts
+                                </button>
+                            </li>
+                        </ul>
+
+                        <div class="tab-content" id="myTabContent">
+
+                            <!-- PODCAST -->
+                            <div class="tab-pane fade show active" id="podcast" role="tabpanel" aria-labelledby="podcast-tab">
+                                <div class="row justify-content-center">
+                                    <div class="col-xl-2">
+                                        25 juin 2021
+                                    </div>
+                                    <div class="col-xl-10">
+                                        <iframe src="https://rcf.fr/embed/2674417" frameborder="0" width="100%" ></iframe>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <!-- NEWSLETTER -->
+                            <div class="tab-pane fade text-start" id="newsletter" role="tabpanel" aria-labelledby="newsletter-tab">
+                                <ul class="list-group">
+                                    <a href="https://rencontrerlarche.substack.com/p/update08email" class="list-group-item" target="blank">
+                                        🇪🇺 épisode 8 - L'appel de Kaunas, Lithuanie / The Call from Kaunas 🇱🇹
+                                    </a>
+                                    <a href="https://rencontrerlarche.substack.com/p/update07email" class="list-group-item" target="blank">
+                                        🇪🇺 épisode 7 - L'appel de Lviv / The Call from Lviv 🇺🇦
+                                    </a>
+                                    <a href="https://rencontrerlarche.substack.com/p/update06email" class="list-group-item" target="blank">
+                                        🇪🇺 épisode 6 - 60 jours avant le départ
+                                    </a>
+                                    <a href="https://rencontrerlarche.substack.com/p/update05email" class="list-group-item" target="blank">
+                                        🇪🇺 épisode 5 - L'appel de Poznań 🇵🇱 + quelques nouvelles du projet
+                                    </a>   
+                                    <a href="https://rencontrerlarche.substack.com/p/update04fr" class="list-group-item" target="blank">
+                                        🇪🇺 épisode 4 - L'appel de Tecklenburg 🇩🇪
+                                    </a>
+                                    <a href="https://rencontrerlarche.substack.com/p/update03fr" class="list-group-item" target="blank">
+                                        🇪🇺 épisode 3 - L'appel de Bruxelles 🇧🇪
+                                    </a>                                     
+                                    <a href="https://rencontrerlarche.substack.com/p/update02fr" class="list-group-item" target="blank">
+                                        🇪🇺 épisode 2 - Les réponses arrivent de Belgique et de Lithuanie
+                                    </a>                                       
+                                    <a href="https://rencontrerlarche.substack.com/p/update01-fr" class="list-group-item" target="blank">
+                                        🇪🇺 épisode 1 - Premiers contacts avec les communautés d'Europe
+                                    </a>
+                                </ul>
+                            </div>                                
+
+                            <!-- SECRET POSTS -->
+                            <div class="tab-pane fade text-start" id="post" role="tabpanel" aria-labelledby="post-tab">
+                                <ul class="list-group">
+                                    <a href="https://rencontrerlarche.substack.com/p/secretpost01" class="list-group-item" target="blank">
+                                        🇨🇵 🇧🇪 L'inconnu incertain 🇬🇧 the uncertain unknown 🇩🇪 das ungewisse Unbekannte 🇵🇱 niepewna niewiadoma 🇺🇦 непевне невідоме 🇪🇦 lo incierto desconocido
+
+                                    </a>
+                                </ul>
+                            </div>                               
+                        </div>
+                          
                     </div>
                 </div>
             </div>
         </section>
-
       
 
         <!-- Footer-->
