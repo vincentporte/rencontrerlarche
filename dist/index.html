@@ -48,6 +48,8 @@
             }
         </script>
 
+        <script type="text/javascript" src="js/jquery-3.6.0.min.js"> </script>
+
     </head>
     <body>
 
@@ -380,7 +382,8 @@
             </div>
         </section>
 
-        <!-- Externe Content-->
+
+        <!-- External Contents-->
         <section class="features-icons bg-light text-center">
             <div class="container position-relative">
                 <div class="row justify-content-center">
@@ -425,42 +428,12 @@
 
                             <!-- NEWSLETTER -->
                             <div class="tab-pane fade text-start" id="newsletter" role="tabpanel" aria-labelledby="newsletter-tab">
-                                <ul class="list-group">
-                                    <a href="https://rencontrerlarche.substack.com/p/update08email" class="list-group-item" target="blank">
-                                        🇪🇺 épisode 8 - L'appel de Kaunas, Lithuanie / The Call from Kaunas 🇱🇹
-                                    </a>
-                                    <a href="https://rencontrerlarche.substack.com/p/update07email" class="list-group-item" target="blank">
-                                        🇪🇺 épisode 7 - L'appel de Lviv / The Call from Lviv 🇺🇦
-                                    </a>
-                                    <a href="https://rencontrerlarche.substack.com/p/update06email" class="list-group-item" target="blank">
-                                        🇪🇺 épisode 6 - 60 jours avant le départ
-                                    </a>
-                                    <a href="https://rencontrerlarche.substack.com/p/update05email" class="list-group-item" target="blank">
-                                        🇪🇺 épisode 5 - L'appel de Poznań 🇵🇱 + quelques nouvelles du projet
-                                    </a>   
-                                    <a href="https://rencontrerlarche.substack.com/p/update04fr" class="list-group-item" target="blank">
-                                        🇪🇺 épisode 4 - L'appel de Tecklenburg 🇩🇪
-                                    </a>
-                                    <a href="https://rencontrerlarche.substack.com/p/update03fr" class="list-group-item" target="blank">
-                                        🇪🇺 épisode 3 - L'appel de Bruxelles 🇧🇪
-                                    </a>                                     
-                                    <a href="https://rencontrerlarche.substack.com/p/update02fr" class="list-group-item" target="blank">
-                                        🇪🇺 épisode 2 - Les réponses arrivent de Belgique et de Lithuanie
-                                    </a>                                       
-                                    <a href="https://rencontrerlarche.substack.com/p/update01-fr" class="list-group-item" target="blank">
-                                        🇪🇺 épisode 1 - Premiers contacts avec les communautés d'Europe
-                                    </a>
-                                </ul>
+                                <ul class="list-group" id="newsletter_list"></ul>
                             </div>                                
 
                             <!-- SECRET POSTS -->
                             <div class="tab-pane fade text-start" id="post" role="tabpanel" aria-labelledby="post-tab">
-                                <ul class="list-group">
-                                    <a href="https://rencontrerlarche.substack.com/p/secretpost01" class="list-group-item" target="blank">
-                                        🇨🇵 🇧🇪 L'inconnu incertain 🇬🇧 the uncertain unknown 🇩🇪 das ungewisse Unbekannte 🇵🇱 niepewna niewiadoma 🇺🇦 непевне невідоме 🇪🇦 lo incierto desconocido
-
-                                    </a>
-                                </ul>
+                                <ul class="list-group" id="post_list"></ul>
                             </div>                               
                         </div>
                           
@@ -499,9 +472,37 @@
             </div>
         </footer>
 
+        <script>
+            var newsletters = 
+            [
+                {"url":"https://rencontrerlarche.substack.com/p/update08email","text":"🇪🇺 épisode 8 - L'appel de Kaunas, Lithuanie / The Call from Kaunas 🇱🇹"},
+                {"url":"https://rencontrerlarche.substack.com/p/update07email","text":"🇪🇺 épisode 7 - L'appel de Lviv / The Call from Lviv 🇺🇦"},
+                {"url":"https://rencontrerlarche.substack.com/p/update06email","text":"🇪🇺 épisode 6 - 60 jours avant le départ"},
+                {"url":"https://rencontrerlarche.substack.com/p/update05email","text":"🇪🇺 épisode 5 - L'appel de Poznań 🇵🇱 + quelques nouvelles du projet"},
+                {"url":"https://rencontrerlarche.substack.com/p/update04fr",   "text":"🇪🇺 épisode 4 - L'appel de Tecklenburg 🇩🇪"},
+                {"url":"https://rencontrerlarche.substack.com/p/update03fr",   "text":"🇪🇺 épisode 3 - L'appel de Bruxelles 🇧🇪"},
+                {"url":"https://rencontrerlarche.substack.com/p/update02fr",   "text":"🇪🇺 épisode 2 - Les réponses arrivent de Belgique et de Lithuanie"},
+                {"url":"https://rencontrerlarche.substack.com/p/update01-fr",  "text":"🇪🇺 épisode 1 - Premiers contacts avec les communautés d'Europe"},
+            ] 
+
+            var posts = 
+            [
+                {"url":"https://rencontrerlarche.substack.com/p/secretpost01",  "text":"🇨🇵 🇧🇪 L'inconnu incertain 🇬🇧 the uncertain unknown 🇩🇪 das ungewisse Unbekannte 🇵🇱 niepewna niewiadoma 🇺🇦 непевне невідоме 🇪🇦 lo incierto desconocido"},
+            ] 
+
+            newsletters.forEach(function(v,k){
+                $("#newsletter_list").append("<a href='" + v.url + "' class='list-group-item' target='blank'>" + v.text + "</a>");
+            });
+            posts.forEach(function(v,k){
+                $("#post_list").append("<a href='" + v.url + "' class='list-group-item' target='blank'>" + v.text + "</a>");
+            });
+
+        </script>
+ 
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
+        <script type="text/javascript" src="js/scripts.js"></script>
+
     </body>
 </html>
