@@ -414,6 +414,11 @@
                         <div class="tab-content" id="myTabContent">
 
                             <!-- PODCAST -->
+                            <div class="tab-pane fade text-start" id="podcasts" role="tabpanel" aria-labelledby="podcasts-tab">
+                                <ul class="list-group" id="podcasts_list"></ul>
+                            </div>      
+
+                            <!--
                             <div class="tab-pane fade" id="podcasts" role="tabpanel" aria-labelledby="podcasts-tab">
                                 <div class="row justify-content-center">
                                     <div class="col-xl-2">
@@ -423,8 +428,16 @@
                                         <a href="https://rcf.fr/actualite/linvite-de-la-redaction-10?episode=1900 ">[RCF] Une famille sarthoise va faire un tour d'Europe des communautés de l'Arche</a>
                                     </div>
                                 </div>
-
+                                <div class="row justify-content-center">
+                                    <div class="col-xl-2">
+                                        24 sept 2021
+                                    </div>
+                                    <div class="col-xl-10">
+                                        <a href="https://rcf.fr/culture-et-societe/la-force-des-differences?episode=139524">[RCF] - La force des différences - Le tour d'Europe de l'Arche avec la famille Porte</a>
+                                    </div>
+                                </div>
                             </div>
+                            -->
 
                             <!-- NEWSLETTER -->
                             <div class="tab-pane fade text-start show active" id="newsletters" role="tabpanel" aria-labelledby="newsletters-tab">
@@ -497,11 +510,20 @@
                 {"url":"https://rencontrerlarche.substack.com/p/secretpost01",  "text":"🇨🇵 🇧🇪 L'inconnu incertain 🇬🇧 the uncertain unknown 🇩🇪 das ungewisse Unbekannte 🇵🇱 niepewna niewiadoma 🇺🇦 непевне невідоме 🇪🇦 lo incierto desconocido"},
             ] 
 
+            var podcasts = 
+            [
+                {"url":"https://rcf.fr/culture-et-societe/la-force-des-differences?episode=139524",  "text":"[RCF] 24 septembre 2021 - La force des différences - Le tour d'Europe de l'Arche avec la famille Porte"},
+                {"url":"https://rcf.fr/actualite/linvite-de-la-redaction-10?episode=1900",  "text":"[RCF] 08 juin 2021 - Une famille sarthoise va faire un tour d'Europe des communautés de l'Arche"},
+            ] 
+
             newsletters.forEach(function(v,k){
                 $("#newsletters_list").append("<a href='" + v.url + "' class='list-group-item' target='blank'>" + v.text + "</a>");
             });
             posts.forEach(function(v,k){
                 $("#posts_list").append("<a href='" + v.url + "' class='list-group-item' target='blank'>" + v.text + "</a>");
+            });
+            podcasts.forEach(function(v,k){
+                $("#podcasts_list").append("<a href='" + v.url + "' class='list-group-item' target='blank'>" + v.text + "</a>");
             });
 
         </script>
