@@ -393,11 +393,7 @@
                         </h2>
 
                         <ul class="nav nav-tabs mb-5" id="myTab" role="tablist">
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link" id="podcasts-tab" data-bs-toggle="tab" data-bs-target="#podcasts" type="button" role="tab" aria-controls="podcasts" aria-selected="true">
-                                    Podcasts
-                                </button>
-                            </li>
+
                             <li class="nav-item" role="presentation">
                                 <button class="nav-link active" id="newsletters-tab" data-bs-toggle="tab" data-bs-target="#newsletters" type="button" role="tab" aria-controls="newsletters" aria-selected="false">
                                     Newsletters
@@ -409,6 +405,11 @@
                                 </button>
                             </li>
                             <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="podcasts-tab" data-bs-toggle="tab" data-bs-target="#podcasts" type="button" role="tab" aria-controls="podcasts" aria-selected="true">
+                                    Podcasts
+                                </button>
+                            </li>
+                            <li class="nav-item" role="presentation">
                                 <button class="nav-link" id="presses-tab" data-bs-toggle="tab" data-bs-target="#presses" type="button" role="tab" aria-controls="presses" aria-selected="false">
                                     Presse
                                 </button>
@@ -416,11 +417,6 @@
                         </ul>
 
                         <div class="tab-content" id="myTabContent">
-
-                            <!-- PODCAST -->
-                            <div class="tab-pane fade text-start" id="podcasts" role="tabpanel" aria-labelledby="podcasts-tab">
-                                <ul class="list-group" id="podcasts_list"></ul>
-                            </div>      
 
                             <!-- NEWSLETTER -->
                             <div class="tab-pane fade text-start show active" id="newsletters" role="tabpanel" aria-labelledby="newsletters-tab">
@@ -432,6 +428,11 @@
                                 <ul class="list-group" id="posts_list"></ul>
                             </div>   
                             
+                            <!-- PODCAST -->
+                            <div class="tab-pane fade text-start" id="podcasts" role="tabpanel" aria-labelledby="podcasts-tab">
+                                <ul class="list-group" id="podcasts_list"></ul>
+                            </div>      
+
                             <!-- PRESSE -->
                             <div class="tab-pane fade text-start" id="presses" role="tabpanel" aria-labelledby="presses-tab">
                                 <ul class="list-group" id="presses_list"></ul>
@@ -502,13 +503,15 @@
 
             var podcasts = 
             [
-                {"url":"https://rcf.fr/culture-et-societe/la-force-des-differences?episode=139524",  "text":"[RCF] 24 septembre 2021 - La force des différences - Le tour d'Europe de l'Arche avec la famille Porte"},
-                {"url":"https://rcf.fr/actualite/linvite-de-la-redaction-10?episode=1900",  "text":"[RCF] 08 juin 2021 - Une famille sarthoise va faire un tour d'Europe des communautés de l'Arche"},
+                {"url":"https://rcf.fr/culture-et-societe/la-force-des-differences?episode=141381",  "text":"<img src='assets/img/logo_rcf.png'/> 22 octobre 2021 - La force des différences - Le tour d'Europe de l'Arche : 2eme étape l'Allemagne !"},
+                {"url":"https://rcf.fr/culture-et-societe/la-force-des-differences?episode=139541",  "text":"<img src='assets/img/logo_rcf.png'/> 22 octobre 2021 - La force des différences - Le tour d'Europe de l'Arche : 1ère étape la Belgique !"},
+                {"url":"https://rcf.fr/culture-et-societe/la-force-des-differences?episode=139524",  "text":"<img src='assets/img/logo_rcf.png'/> 24 septembre 2021 - La force des différences - Le tour d'Europe de l'Arche avec la famille Porte"},
+                {"url":"https://rcf.fr/actualite/linvite-de-la-redaction-10?episode=1900",  "text":"<img src='assets/img/logo_rcf.png'/> 08 juin 2021 - Une famille sarthoise va faire un tour d'Europe des communautés de l'Arche"},
             ] 
 
             var presses = 
             [
-                {"url":"assets/pdf/OL244-initiatives.pdf",  "text":"[Ombres & Lumière] numéro 244, novembre/décembre 2021, Initiatives - Un tour européen des Communautés de L'Arche"},
+                {"url":"assets/pdf/OL244-initiatives.pdf",  "text":"<img src='assets/img/logo_OL.png'/> numéro 244, novembre/décembre 2021, Initiatives - Un tour européen des Communautés de L'Arche"},
             ] 
 
             newsletters.forEach(function(v,k){
