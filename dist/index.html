@@ -408,6 +408,11 @@
                                     Secret Posts
                                 </button>
                             </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="presses-tab" data-bs-toggle="tab" data-bs-target="#presses" type="button" role="tab" aria-controls="presses" aria-selected="false">
+                                    Presse
+                                </button>
+                            </li>
                         </ul>
 
                         <div class="tab-content" id="myTabContent">
@@ -425,7 +430,12 @@
                             <!-- SECRET POSTS -->
                             <div class="tab-pane fade text-start" id="posts" role="tabpanel" aria-labelledby="posts-tab">
                                 <ul class="list-group" id="posts_list"></ul>
-                            </div>                               
+                            </div>   
+                            
+                            <!-- PRESSE -->
+                            <div class="tab-pane fade text-start" id="presses" role="tabpanel" aria-labelledby="presses-tab">
+                                <ul class="list-group" id="presses_list"></ul>
+                            </div>                             
                         </div>
                           
                     </div>
@@ -496,6 +506,11 @@
                 {"url":"https://rcf.fr/actualite/linvite-de-la-redaction-10?episode=1900",  "text":"[RCF] 08 juin 2021 - Une famille sarthoise va faire un tour d'Europe des communautés de l'Arche"},
             ] 
 
+            var presses = 
+            [
+                {"url":"assets/pdf/OL244-initiatives.pdf",  "text":"[Ombres & Lumière] numéro 244, novembre/décembre 2021, Initiatives - Un tour européen des Communautés de L'Arche"},
+            ] 
+
             newsletters.forEach(function(v,k){
                 $("#newsletters_list").append("<a href='" + v.url + "' class='list-group-item' target='blank'>" + v.text + "</a>");
             });
@@ -504,6 +519,9 @@
             });
             podcasts.forEach(function(v,k){
                 $("#podcasts_list").append("<a href='" + v.url + "' class='list-group-item' target='blank'>" + v.text + "</a>");
+            });
+            presses.forEach(function(v,k){
+                $("#presses_list").append("<a href='" + v.url + "' class='list-group-item' target='blank'>" + v.text + "</a>");
             });
 
         </script>
